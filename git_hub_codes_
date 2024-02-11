@@ -1,0 +1,150 @@
+// JavaScript Command \
+// ls = list files (show my files)
+
+// pwd = print working directory (wher am i?);
+
+// clear = clear screen 
+
+// Navigation 
+// Inside and Outside Directories 
+// cd = change directory 
+//cd.. = back button
+
+// Example -->
+// cd Desktop/Delta 
+// cd../.. 
+
+// -----------------------------------------------------------------------------
+// Paths
+// Absolute and Relative 
+
+// Example -->
+// cd desktop/Delta (relative path)
+// cd/Users/shadhakhapra/Desktop (absolute path) 
+// / = root directory
+// ~ = home directory
+// --------------------------------------------------------------------------------
+
+// Making Diectories 
+// mkdir = make directory 
+// Example -->
+//cd ../..
+// mkdir Delta/NewDir2/hello2          or
+//mkdir / Users/shradhakhapra/Desktop/Delta/NewDir2/hello2
+
+// --------------------------------------------------------------------------------------------
+// Flags 
+// Flags are characters that we pass with comment to modify their behaviour 
+
+// manual Command
+
+// man ls - give imformation about ls command
+// man mkdir - give information about mkdir command 
+
+// with Flags 
+
+// ls -l 
+// ls -a
+// ls -la 
+
+// -------------------------------------------------------------------------------------------------------
+// Touch Command 
+// Used to create files 
+
+// touch indexedDB.html 
+// touch app.js 
+// touch abc.txt 
+// --------------------------------------------------------------------------------------------------
+
+// Deleting Files and Folders 
+// rm - removes files 
+// rmdir - removes empty folder 
+// rm-rf - remove any folder 
+// Example -->
+// rm abc.html ----> remove the file abc.html
+// rm -rf NewDir ---> remove the folder NewDir
+// -------------------------------------------------------------------------------------
+// Congiguring Git 
+// git config --global user.name "My Name"
+// git config --global user.email "someone@gmail.com"
+
+// Basic Commands
+// clone - Cloning a repository on our local machine 
+// status - Display the state of the code
+// Example -->
+// git clone < link>
+// git status  
+// ------------------------------------------------------------------------------------------
+
+// First crate repo than copy and commit and push to github
+
+// add - add new or chnaged files in your working directory to the Git staging area 
+// commit - it is the record of change 
+// git commit -m "some message"
+// push - upload local repo content to remote repo
+// git push origin main
+// Example -->
+// git add indexedDB.html  
+// git add . ------------------>means we have add all file to stage
+// git status 
+//git commit -m "Add new files"
+// git status 
+// git push origin main
+// ---------------------------------------------------------------------------------------------
+
+// We create project than directly push to github 
+// Basic Commmands 
+// init - used to create a new git repo 
+// git init 
+// git remote add origin <link>
+// git remote -v   (to verify remote)
+// git branch       (to check branch)
+// git branch -M main   (to rename branch)
+// git push origin main 
+// ----------------------------------------------------------------------------------
+// Branch Commands
+// git branch                    (to check branch)
+// git branch-M main             (to rename branch)
+// gut checkout <branch name>           (to navigate)
+// git checkout-b <new branch name>   (to create new branch)
+// git branch-d <branch name>         (to delete branch)
+
+// To push the current branch and set the remote as upstream use
+// git push --set-upstream orgin feature (wher feature is branch name) 
+// -------------------------------------------------------------------------------------
+// Merging Code 
+// git diff <branch name>  (to compare commits, branches, files and more)
+// git merge <branch name>  (to merge 2 branches)
+
+// OR
+// Create a PR 
+
+// ----------------------------------------------------------------------------------------
+// Github me to change ho gaya usay apne device me kise laye
+// through pull request 
+// Basic Command------------>
+// git pull origin main 
+// (used to fetch and download contnt from a remote repo and immediately update the local repo to match that content)
+
+// Merge Conflicts 
+// An event that takes place when Git is unable to automatically resolve difference in code between two CustomElementRegistry. 
+// -----------------------------------------------------------------------------------------------------------------------------------
+
+// Fixing Mistakes 
+
+// case 1: staged changes
+//  git reset <file name>
+//  git reset 
+
+// case 2:commited changes(for one commit)
+// git reset Head~1 
+
+// case 3:commited chnages (for many commits)
+//git log --------->to get commit hash
+// git reset <commit hash>
+// git reset --hard<commit hash>
+// -------------------------------------------------------------------------------------------------------------------------------------------
+
+// Forking 
+// A fork is a new repository that shares code and visibility setting with the original "upstream" repository 
+//Fork is a rough copy
