@@ -148,3 +148,76 @@
 // Forking 
 // A fork is a new repository that shares code and visibility setting with the original "upstream" repository 
 //Fork is a rough copy
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Git Bash
+itssa@Sandy MINGW64 ~
+$ cd d:
+
+itssa@Sandy MINGW64 /d
+$ cd react_app_h
+
+itssa@Sandy MINGW64 /d/react_app_h
+$ dir
+my-app
+
+itssa@Sandy MINGW64 /d/react_app_h
+$ cd my-app/
+
+itssa@Sandy MINGW64 /d/react_app_h/my-app (master)
+$ git status
+
+itssa@Sandy MINGW64 /d
+$ cd react_app_h
+
+itssa@Sandy MINGW64 /d/react_app_h
+$ dir
+my-app
+
+itssa@Sandy MINGW64 /d/react_app_h
+$ cd my-app
+
+itssa@Sandy MINGW64 /d/react_app_h/my-app (main)
+$ git init
+Reinitialized existing Git repository in D:/react_app_h/my-app/.git/
+
+itssa@Sandy MINGW64 /d/react_app_h/my-app (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+itssa@Sandy MINGW64 /d/react_app_h/my-app (main)
+$ git add .
+
+itssa@Sandy MINGW64 /d/react_app_h/my-app (main)
+$ git commit -m 'my first commit'
+On branch main
+nothing to commit, working tree clean
+
+itssa@Sandy MINGW64 /d/react_app_h/my-app (main)
+$ git remote add origin https://github.com/iSandeep07/my-app.git
+error: remote origin already exists.
+
+itssa@Sandy MINGW64 /d/react_app_h/my-app (main)
+$ git branch -M main
+
+itssa@Sandy MINGW64 /d/react_app_h/my-app (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 37, done.
+Counting objects: 100% (37/37), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (37/37), done.
+Writing objects: 100% (37/37), 186.44 KiB | 13.32 MiB/s, done.
+Total 37 (delta 7), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (7/7), done.
+To https://github.com/iSandeep07/my-app.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+itssa@Sandy MINGW64 /d/react_app_h/my-app (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+itssa@Sandy MINGW64 /d/react_app_h/my-app (main)
+https://create-react-app.dev/docs/deployment/               ctrl+f --> githubpages
